@@ -110,3 +110,11 @@ arguments : 매개 변수는 배열.
     1. setInterval(함수, 시간) : 시간 간격마다 함수 실행
     1. clearTimeout() : 설정된 Timeout 함수를 종료
     1. clearInterval() : 설정된 Interval 함수를 종료
+1. 콜백 함수  
+함수의 인수로 사용되는 함수  
+`실행 위치를 보장해주는 방법으로 활용.`
+--- 
+
+</br>
+
+## 클래스
