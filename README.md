@@ -15,7 +15,7 @@ npm init -y : package.json 생성
     ```
     서버 열기 및 build
     ```
-    ServerOpen:  npm run dev
+    ServerOpen: npm run dev
          build: npm run build
     ```
     - "dev": "parcel index.html" //개발용 서버 열기
@@ -117,4 +117,5 @@ arguments : 매개 변수는 배열.
 
 </br>
 
-## 클래스
+## `☆클래스`
+<a href="https://github.com/backSeungWook/nodeNote/blob/master/main.js">`※main.js 예제 참고`</a>  

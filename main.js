@@ -69,3 +69,32 @@ h1El.addEventListener('click',() => {
 const setIntervalTimer = setInterval(() => {
   console.log("setInterval")
 }, 3000)
+
+//클래스 예제
+//데이터 형식
+const name = {
+  firstName: 'wook',
+  lastName: 'Baxk',
+  getFullName: function() {
+    return `${this.firstName} ${this.lastName}`
+  }
+} 
+
+console.log(name)
+console.log(name.getFullName()) //사용 할 때 마다 메모리에 할당이 됨..
+
+//클래스로 변경
+function User(first,last)
+{
+  this.firstName = first
+  this.lastName = last
+}
+//prototype 속성은 공통(메모리에 한번만)
+User.prototype.getFullName = function () {
+  return `${this.firstName} ${this.lastName}`
+}
+
+
+const userclass = new User('wook','Back')
+console.log(userclass)
+console.log(userclass.getFullName())
