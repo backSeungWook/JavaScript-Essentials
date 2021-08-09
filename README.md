@@ -98,14 +98,14 @@ arguments : 매개 변수는 배열.
     }());
     ```
 1. 호이스팅  
-함수 선언부가 유효범위 최상단으로 끌어올려지는 현상(`main.js 예제 참고`)
+함수 선언부가 유효범위 최상단으로 끌어올려지는 현상(<a href="https://github.com/backSeungWook/nodeNote/blob/master/main.js">`main.js 예제 참고`</a>)
     ```javascript
     function test(){
         console.log(14)
     }   
     ```
 1. 타이머 함수  
-`main.js 예제 참고`
+<a href="https://github.com/backSeungWook/nodeNote/blob/master/main.js">`main.js 예제 참고`</a>
     1. setTimeout(함수, 시간) : 일정 시간 후 함수 실행
     1. setInterval(함수, 시간) : 시간 간격마다 함수 실행
     1. clearTimeout() : 설정된 Timeout 함수를 종료
