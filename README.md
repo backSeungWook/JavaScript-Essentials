@@ -13,6 +13,11 @@ npm init -y : package.json 생성
         "build":"parcel build index.html"
     },
     ```
+    서버 열기 및 build
+    ```
+    ServerOpen:  npm run dev
+         build: npm run build
+    ```
     - "dev": "parcel index.html" //개발용 서버 열기
     - "build":"parcel build index.html" //build 배포
 1. npm install lodash
@@ -60,3 +65,48 @@ export default function getType(data) 이런식으로 선언.
 1. 삼항 연산자  
 `a ? '참' : '거짓'`  
 거짓 : `false, '', null , undefined, 0, -0, NaN` 
+
+## 함수
+함수 호출 시 ; 를 지정해서 함수호출의 끝이라고 표시  
+(안써도 되긴 하나 즉시실행함수 사용 시 에러 발생 할수 있음.)
+1. arguments : 함수 정의 시 매개 변수를 지정 안하고  
+함수 호출 시 매개 변수 지정 시 `arguments` 를 사용하여 매개 변수를 가져올수있음  
+arguments : 매개 변수는 배열.  
+1. 화살표 함수  
+    ```javascript
+    (x) => { 
+        return x * 2 
+    }
+    ```
+    ==> 리턴 시 리턴 생략 가능 / 매개 변수가 하나 인 경우 () 괄호 도 생략 가능  
+    ```javascript
+    x => x * 2
+    ```
+    개체 데이터는 () 한번 감싸줘야댐
+    ```javascript
+    x => (
+        {       
+           name: 'Test' 
+    })
+    ```
+1. 즉시실행함수  
+`즉시 함수 사용시 사용 전 문법에서는 ;으로 문법이 끝났다고 표시해줘야 함`  
+함수를 만들자 마자 바로 사용할 함수  
+    ```javascript
+    (function (){
+        console.log(a * 2)
+    }());
+    ```
+1. 호이스팅  
+함수 선언부가 유효범위 최상단으로 끌어올려지는 현상(`main.js 예제 참고`)
+    ```javascript
+    function test(){
+        console.log(14)
+    }   
+    ```
+1. 타이머 함수  
+`main.js 예제 참고`
+    1. setTimeout(함수, 시간) : 일정 시간 후 함수 실행
+    1. setInterval(함수, 시간) : 시간 간격마다 함수 실행
+    1. clearTimeout() : 설정된 Timeout 함수를 종료
+    1. clearInterval() : 설정된 Interval 함수를 종료
