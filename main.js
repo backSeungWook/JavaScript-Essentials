@@ -89,20 +89,23 @@ function User(first,last)
   this.firstName = first
   this.lastName = last
 }
-//prototype 속성은 공통(메모리에 한번만)
+//prototype 속성은 공통(메모리에 한번만 할당)
 User.prototype.getFullName = function () {
   return `${this.firstName} ${this.lastName}`
 }
 
 
 const userclass = new User('wook','Back')
+const userclass22 = new User('wook2','Back2')
 console.log(userclass)
 console.log(userclass.getFullName())
+console.log(userclass22)
+console.log(userclass22.getFullName())
 
 // this
 //일반 함수는 호출 위치에 따라 this 정의
 //화살표 함수는 자신이 선언된 함수 범위에서 this 정의
-//(콜백 함수에서 개체데이터에 있는 this.값 을 찾을때)
+//(콜백 함수에서 개체데이터에 있는 this.값(name1) 을 찾을때)
 const heropy = {
   name1: 'Heropy',
   normal: function()
