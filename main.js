@@ -71,7 +71,7 @@ const setIntervalTimer = setInterval(() => {
 }, 3000)
 
 //클래스 예제
-//데이터 형식
+//개체데이터 형식
 const name = {
   firstName: 'wook',
   lastName: 'Baxk',
@@ -80,7 +80,7 @@ const name = {
   }
 } 
 
-console.log(name)
+console.log('개체데이터',name)
 console.log(name.getFullName()) //사용 할 때 마다 메모리에 할당이 됨..
 
 //클래스로 변경
@@ -98,3 +98,43 @@ User.prototype.getFullName = function () {
 const userclass = new User('wook','Back')
 console.log(userclass)
 console.log(userclass.getFullName())
+
+// this
+//일반 함수는 호출 위치에 따라 this 정의
+//화살표 함수는 자신이 선언된 함수 범위에서 this 정의
+//(콜백 함수에서 개체데이터에 있는 this.값 을 찾을때)
+const heropy = {
+  name1: 'Heropy',
+  normal: function()
+  {
+    console.log(this.name1)
+  },
+  arrow: () =>{
+    console.log(this.name1)
+  }
+}
+//heropy.normal()//Heropy
+//heropy.arrow()//undefined
+
+//ES6 Class
+class UserEs6
+{
+  //constructor 함수는 꼭 만들어줘야함(자바의 생성자 느낌)
+  constructor(first,last)
+  {
+    this.firstName = first
+    this.lastName = last
+  }
+  getFullName(){
+    return `${this.firstName} ${this.lastName}`
+  }
+}
+
+const userclass2 = new UserEs6('wook','Back')
+console.log('UserEs6',userclass)
+console.log(userclass.getFullName())
+
+//상속 키워드 : extends (super // 사용법은 자바와 동일)
+
+
+//클래스 예제 END
