@@ -31,7 +31,7 @@ npm init -y : package.json 생성
 
 ## JavaScript
 1. typeof : 데이터의 타입 확인.  
-배열은 typeof로 만으로는 힘듬.
+배열은 typeof로 확인이 힘듬.
    ```javascript
       function getType(data)
       {
