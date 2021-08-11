@@ -1,4 +1,4 @@
-# Node.js Note(21.08.09)
+# Part3 .JavaScript Essentials(21.08.09)
 필수 npm i 명령어 실행 후 프로젝트 가져와야댐
 npm init -y : package.json 생성
 
@@ -117,5 +117,5 @@ arguments : 매개 변수는 배열.
 
 </br>
 
-## `☆클래스`
+## `☆클래스` (21.08.12)
 <a href="https://github.com/backSeungWook/nodeNote/blob/master/main.js">`※main.js 예제 참고`</a>  
